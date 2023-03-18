@@ -1,0 +1,78 @@
+#contact {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+.contact-container{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 600px;
+    padding: 40px;
+    box-sizing: border-box;
+    border-radius: 10px;
+    background: #fff;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+}
+
+.input-field{
+    position: relative;
+    width: 100%;
+    margin-top: 50px;
+}
+.input-field input,
+.input-field textarea
+{
+    width: 100%;
+    padding: 5px 0;
+    box-sizing: border-box;
+    background: transparent;
+    border: none;
+    outline: none;
+    border-bottom: 2px solid #666;
+    font-size: 14px;
+    color: $secondary-color;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+.input-field label{
+    position: absolute;
+    top: -30px;
+    left:0;
+    padding: 5px 0;
+    pointer-events: none;
+    font-size: 16px;
+    color: #666;
+    font-weight: 700;
+    text-transform: uppercase;
+    transition: .5s;
+}
+.input-field input:focus + label,
+.input-field textarea:focus + label
+{
+    top:-25px;
+    font-size: 14px;
+    padding: 2px 5px;
+    background:$secondary-color;
+    color: #fff;
+    border-radius: 4px;
+}
+.btn-submit{
+    margin-top: 20px;
+    background: $secondary-color;
+    color: #fff;
+    padding: 15px 30px;
+    border: none;
+    outline: none;
+    border-radius: 30px;
+    font-weight: 700;
+    text-transform: uppercase;
+    transition: 0.5s;
+    font-size: 16px;
+    float: right;
+}
+.btn-submit:hover{
+    background: $primary-color;
+}
