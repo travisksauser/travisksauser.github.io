@@ -90,18 +90,13 @@
 .nav-item:nth-child(4) {
   transition-delay: 0.4s; }
 
-#contact {
-  margin: 0;
-  padding: 0;
-  text-align: center; }
-
 .contact-container {
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%);
-  width: 600px;
-  padding: 40px;
+  transform: translate(-50%, -25%);
+  width: 60vw;
+  padding: 15px;
   box-sizing: border-box;
   border-radius: 10px;
   background: #fff;
@@ -154,12 +149,13 @@
   padding: 15px 30px;
   border: none;
   outline: none;
-  border-radius: 30px;
+  border-radius: 10px;
   font-weight: 700;
   text-transform: uppercase;
   transition: 0.5s;
   font-size: 16px;
-  float: right; }
+  float: right;
+  cursor: pointer; }
 
 .btn-submit:hover {
   background: #4b4d4d; }
@@ -288,11 +284,15 @@ main {
 
 @media screen and (min-width: 1171px) {
   .projects {
-    grid-template-columns: repeat(4, 1fr); } }
+    grid-template-columns: repeat(4, 1fr); }
+  .contact-container {
+    width: 40vw; } }
 
 @media screen and (min-width: 769px) and (max-width: 1170px) {
   .projects {
-    grid-template-columns: repeat(3, 1fr); } }
+    grid-template-columns: repeat(3, 1fr); }
+  .contact-container {
+    width: 50vw; } }
 
 @media screen and (max-width: 768px) {
   main {

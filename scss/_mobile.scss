@@ -3,12 +3,18 @@
     .projects {
         grid-template-columns: repeat(4, 1fr);
     }
+    .contact-container {
+        width: 40vw;
+    }
 }
 
 // Desktops & Laptops
 @include mediaLg {
     .projects {
         grid-template-columns: repeat(3, 1fr);
+    }
+    .contact-container {
+        width: 50vw;
     }
 }
 
