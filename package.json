@@ -2,10 +2,10 @@
   "name": "portfolio_website",
   "version": "1.0.0",
   "main": "index.js",
-  "homepage": "https://tsauser.github.io/portfolio_website",
+  "homepage": "https://travisksauser.github.io",
   "scripts": {
-    "sass": "node-sass -w scss/ -o dist/css/ --recursive",
-    "deploy": "gh-pages -d dist"
+    "sass": "node-sass -w scss/ -o travisksauser.github.io/css/ --recursive",
+    "deploy": "gh-pages -d travisksauser.github.io"
   },
   "author": "",
   "license": "ISC",

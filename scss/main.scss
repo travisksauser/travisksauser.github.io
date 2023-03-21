@@ -1,6 +1,5 @@
 @import 'config';
 @import 'menu';
-@import 'contact';
 
 * {
     box-sizing: border-box;
@@ -12,7 +11,7 @@ body {
     color: set-text-color($primary-color);
     height: 100%;
     margin: 0;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: 'Lato', sans-serif;
     line-height: 1.5;
 }
 
@@ -125,6 +124,38 @@ main {
             opacity: 0.5;
             border-color: $secondary-color;
             @include easeOut;
+        }
+    }
+}
+
+// Contact Page
+.boxes {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 1rem;
+
+    div {
+        font-size: 1.6rem;
+        border: 2px $secondary-color solid;
+        padding: .5rem 1rem;
+        margin-bottom: 3rem;
+        @include easeOut;
+
+        &:hover {
+            padding: .4rem .9rem;
+            background: $secondary-color;
+            color: set-text-color($secondary-color);
+            span {
+                color: set-text-color($secondary-color);
+            }
+        }
+
+        a {
+            cursor:pointer;
+            color:blue;
+            text-decoration:underline;
         }
     }
 }

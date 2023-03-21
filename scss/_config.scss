@@ -1,8 +1,8 @@
-$primary-color: #4b4d4d;
-$secondary-color: #4d937c;
+$primary-color: #E1DAD6;
+$secondary-color: #ACACA3;
 $show-home-image: true;
-$home-image: url(../img/background.jpg);
-$background-opacity: .5;
+$home-image: url(../img/neutral_waves.jpg);
+$background-opacity: .3;
 
 @mixin easeOut {
     transition: all .3s ease-out;
